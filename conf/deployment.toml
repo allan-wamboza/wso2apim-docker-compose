@@ -299,7 +299,8 @@ iat_validity_period = "1h"
 
 [apim.monetization]
 monetization_impl = "org.wso2.apim.monetization.openmeter.OpenMeterMonetizationImpl"
-publish_usage_data_cron = "0 5 * * * ?"          # hourly, at minute 5
+# publish_usage_data_cron = "0 5 * * * ?"          # hourly, at minute 5
+publish_usage_data_cron = "0/30 * * * * ?"          # every 30 seconds, for testing only
 
 #  usage source — ELK / OpenSearch
 analytics_host = "opensearch"
