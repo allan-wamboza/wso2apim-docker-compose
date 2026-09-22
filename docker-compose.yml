@@ -90,6 +90,7 @@ services:
     volumes:
       - ./fluent-bit-conf/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf:ro
       - ./fluent-bit-conf/parsers.conf:/fluent-bit/etc/parsers.conf:ro
+      - fluentbit_state:/fluent-bit/state
       - ./logs:/fluent-bit/logs
     ports:
       - "2020:2020"
@@ -101,6 +102,9 @@ services:
       - /fluent-bit/etc/fluent-bit.conf
     networks:
       - quickstart_default
+
+volumes:
+  fluentbit_state:
 
 networks:
   postgresql_default:
