@@ -300,13 +300,13 @@ iat_validity_period = "1h"
 monetization_impl = "org.wso2.apim.monetization.openmeter.OpenMeterMonetizationImpl"
 publish_usage_data_cron = "0 5 * * * ?"          # hourly, at minute 5
 
-# usage source — ELK / OpenSearch
-# analytics_host = "localhost"
-# analytics_port = 9200
-# analytics_protocol = "https"
-# analytics_username = "elastic"
-# analytics_password = "$env{ELASTIC_PASSWORD}"
-# analytics_index_name = "apim_event_response"
+#  usage source — ELK / OpenSearch
+analytics_host = "opensearch"
+analytics_port = 9200
+analytics_protocol = "https"
+analytics_username = "admin"
+analytics_password = "password123"
+analytics_index_name = "apim_event_response"
 
 # required before monetization can be switched on for any API (see below)
 [[apim.monetization.additional_attributes]]
