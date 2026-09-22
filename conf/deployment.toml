@@ -306,8 +306,8 @@ analytics_host = "opensearch"
 analytics_port = 9200
 analytics_protocol = "https"
 analytics_username = "admin"
-analytics_password = "password123"
-analytics_index_name = "apim_event_response"
+analytics_password = "Password@1238938998"
+analytics_index_name = "wso2-apim-event-response"
 
 # required before monetization can be switched on for any API (see below)
 [[apim.monetization.additional_attributes]]
