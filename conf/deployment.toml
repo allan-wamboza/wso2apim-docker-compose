@@ -235,14 +235,15 @@ allow_credentials = false
 #ssl_enabled_protocols = ["TLSv1","TLSv1.1","TLSv1.2"]
 #ciphers = ["SSL_RSA_WITH_RC4_128_MD5","SSL_RSA_WITH_RC4_128_SHA"]
 
-#[apim.notification]
-#from_address = "APIM.com"
-#username = "APIM"
-#password = "APIM+123"
-#hostname = "localhost"
-#port = 3025
-#enable_start_tls = false
-#enable_authentication = true
+[apim.notification]
+from_address = "software.marvel489@gmail.com"
+username = "software.marvel489@gmail.com"
+password = "lkontdrfigwyiuwr"
+signature = "WSO2 API Manager - Do Not Reply"
+hostname = "smtp.gmail.com"
+port = 587
+enable_start_tls = true
+enable_authentication = true
 
 #[apim.token.revocation]
 #notifier_impl = "org.wso2.carbon.apimgt.notification.TokenRevocationNotifierImpl"
