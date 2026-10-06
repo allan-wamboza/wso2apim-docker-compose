@@ -18,6 +18,7 @@ services:
       - ./solr:/home/wso2carbon/wso2am-4.7.0/solr
       - ./lib/org.wso2.apim.monetization.openmeter-1.0.0.jar:/home/wso2carbon/wso2am-4.7.0/repository/components/lib/org.wso2.apim.monetization.openmeter-1.0.0.jar
       - ./lib/postgresql-42.7.13.jar:/home/wso2carbon/wso2am-4.7.0/repository/components/lib/postgresql-42.7.13.jar
+      - ./lib/apim-workflow-email-notifier-1.0.0.jar:/home/wso2carbon/wso2am-4.7.0/repository/components/lib/apim-workflow-email-notifier-1.0.0.jar
       - ./webapps/api#am#openmeter.war:/home/wso2carbon/wso2am-4.7.0/repository/deployment/server/webapps/api#am#openmeter.war
     networks:
       - quickstart_default
